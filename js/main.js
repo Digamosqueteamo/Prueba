@@ -30,9 +30,9 @@ btnNo.onclick = function(){
       btnNo.style.fontSize = "35px";
     break;
     }
+    
+    numeroIntentos++;
   }, 100);
- 
- numeroIntentos++;
 }
 
 btnSi.addEventListener("click", redireccion)
