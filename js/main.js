@@ -18,8 +18,8 @@ btnNo.onclick = function(){
       btnNo.style.fontSize = "22px";
     break;
     case 2:
+      imgMuñoz.style.objectPosition = "bottom";
       imgMuñoz.src = "./imgs/Muñoz5.jpg";
-      //imgMuñoz.style.objectPosition = "bottom";
       btnNo.innerText = "Tengo miedo";
     break;
     default:
