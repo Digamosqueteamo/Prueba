@@ -1,0 +1,66 @@
+body{
+  background-color: var(--BGColor);
+}
+
+:root{
+  --BGColor: salmon;
+  --btnBGColor: blue;
+  --btnColor: white;
+}
+
+#app{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#dvImg{
+  overflow: hidden;
+  width: 280px;
+  height: 420px;
+  border-radius: 15px;
+  position: relative;
+}
+
+#imgMuñoz{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: top;
+}
+
+h3{
+  font-size: 25px;
+}
+
+#dvBotones{
+  display: flex;
+  gap: 20px;
+}
+
+.btns{
+  background-color: var(--btnBGColor);
+  
+  font-size: 25px;
+  color: var(--btnColor);
+  font-weight: bold;
+  
+  border: 0;
+  border-radius: 15px;
+  width: 100px;
+  height: 50px;
+  outline: 5px solid var(--btnBGColor);
+  outline-offset: 0;
+  transition: outline-offset 5s easy;
+}
+
+.btns:active{
+  outline-offset: 3px;
+}
+
+#btnWhatsApp{
+  font-size: 25px;
+  width: 150px;
+  height: 50px;
+}
