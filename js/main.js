@@ -19,7 +19,7 @@ btnNo.onclick = function(){
     break;
     case 2:
       imgMuñoz.src = "./imgs/Muñoz5.jpg";
-      imgMuñoz.style.objectPosition = "bottom";
+      //imgMuñoz.style.objectPosition = "bottom";
       btnNo.innerText = "Tengo miedo";
     break;
     default:
