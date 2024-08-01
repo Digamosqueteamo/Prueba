@@ -5,17 +5,17 @@ let imgMuñoz = document.getElementById("imgMuñoz");
 let numeroIntentos = 0;
 
 btnNo.onclick = function(){
-
-  switch (numeroIntentos){
+  setTimeout(function(){
+    switch (numeroIntentos){
     case 0:
       imgMuñoz.src = "./imgs/Muñoz3.jpg";
       btnNo.innerText = "Estoy segura";
-      btnNo.style.fontSize = "20px";
+      btnNo.style.fontSize = "25px";
     break;
     case 1:
       imgMuñoz.src = "./imgs/Muñoz4.jpg";
       btnNo.innerText = "Me voy con ayala";
-      btnNo.style.fontSize = "17px";
+      btnNo.style.fontSize = "22px";
     break;
     case 2:
       imgMuñoz.src = "./imgs/Muñoz5.jpg";
@@ -27,9 +27,10 @@ btnNo.onclick = function(){
       btnNo.addEventListener("click", redireccion)
       h3opcion.style.opacity = "100%";
       btnNo.innerText = "ZI";
-      btnNo.style.fontSize = "25px";
+      btnNo.style.fontSize = "35px";
     break;
-  }
+    }
+  }, 100);
  
  numeroIntentos++;
 }
@@ -37,5 +38,7 @@ btnNo.onclick = function(){
 btnSi.addEventListener("click", redireccion)
 
 function redireccion(){
-  window.location.href = "si.html";
+  setTimeout(function(){
+    window.location.href = "si.html";
+  }, 100);
 }

@@ -8,9 +8,10 @@ body{
 }
 
 :root{
-  --BGColor: salmon;
-  --btnBGColor: blue;
-  --btnColor: white;
+  --BGColor: #e7aab7;
+  --btnBGColor: #db8192;
+  --btnColor: #79113a;
+  --textColor: #79113a;
 }
 
 #app{
@@ -23,7 +24,7 @@ body{
 #dvImg{
   overflow: hidden;
   width: 280px;
-  height: 420px;
+  height: 400px;
   border-radius: 15px;
   position: relative;
 }
@@ -37,8 +38,9 @@ body{
 }
 
 h3{
-  font-size: 25px;
+  font-size: 30px;
   text-align: center;
+  color: var(--textColor);
 }
 
 #h3opcion{
@@ -54,27 +56,28 @@ h3{
 
 #dvBotones{
   display: flex;
-  gap: 20px;
+  gap: 30px;
 }
 
 .btns{
   background-color: var(--btnBGColor);
   
-  font-size: 25px;
+  font-size: 35px;
   color: var(--btnColor);
   font-weight: bold;
   
   border: 0;
   border-radius: 15px;
-  width: 100px;
-  height: 50px;
-  outline: 5px solid var(--btnBGColor);
+  width: 130px;
+  height: 60px;
+  
+  outline: 10px solid var(--btnBGColor);
   outline-offset: 0;
-  transition: outline-offset 5s easy;
+  transition: outline-offset 0.05s linear;
 }
 
 .btns:active{
-  outline-offset: 3px;
+  outline-offset: 5px;
 }
 
 #btnWhatsApp{
