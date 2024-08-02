@@ -1,12 +1,16 @@
 let btnSi = document.getElementById("btnSi");
-let btnNo = document.getElementById("btnNo");
+let btnNo = document.getElementById("btnNo").addEventListener("click", no);
 let h3opcion = document.getElementById("h3opcion");
 let imgMuñoz = document.getElementById("imgMuñoz");
+let btnEaster = document.getElementById("btnEaster");
+btnEaster.addEventListener("click", easterEgg);
+
 let numeroIntentos = 0;
 
-btnNo.onclick = function(){
+function no(){
   switch (numeroIntentos){
     case 0:
+      btnEaster.style.display = "none";
       imgMuñoz.src = "./imgs/Muñoz3.jpg";
       btnNo.innerText = "Estoy segura";
       btnNo.style.fontSize = "25px";
@@ -23,7 +27,7 @@ btnNo.onclick = function(){
     break;
     default:
       imgMuñoz.src = "./imgs/MuñozMalo.jpg";
-      btnNo.addEventListener("click", redireccion)
+      btnNo.addEventListener("click", redireccion);
       h3opcion.style.opacity = "100%";
       btnNo.innerText = "ZI";
       btnNo.style.fontSize = "35px";
@@ -39,4 +43,9 @@ function redireccion(){
   setTimeout(function(){
     window.location.href = "si.html";
   }, 100);
+}
+
+function easterEgg(){
+  alert("Pene");
+  
 }
