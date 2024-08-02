@@ -1,10 +1,11 @@
 let btnSi = document.getElementById("btnSi");
-let btnNo = document.getElementById("btnNo").addEventListener("click", no);
+let btnNo = document.getElementById("btnNo")
 let h3opcion = document.getElementById("h3opcion");
 let imgMuñoz = document.getElementById("imgMuñoz");
 let videoMuñoz = document.getElementById("videoMuñoz");
 let btnEaster = document.getElementById("btnEaster");
 btnEaster.addEventListener("click", easterEgg);
+btnNo.addEventListener("click", no);
 
 let numeroIntentos = 0;
 
@@ -20,22 +21,16 @@ function no(){
     break;
     case 1:
       imgMuñoz.src = "./imgs/Muñoz4.jpg";
-      videoMuñoz.style.display = "none";
-      imgMuñoz.style.display = "block";
       btnNo.innerText = "Me voy con ayala";
       btnNo.style.fontSize = "22px";
     break;
     case 2:
-      //imgMuñoz.style.objectPosition = "bottom";
-      videoMuñoz.src = "./imgs/Muñoz5.jpg";
+      imgMuñoz.src = "./imgs/Muñoz5.jpg";
       imgMuñoz.style.display = "block";
-      imgMuñoz.style.display = "none";
       btnNo.innerText = "Tengo miedo";
     break;
     default:
       imgMuñoz.src = "./imgs/MuñozMalo.jpg";
-      videoMuñoz.style.display = "none";
-      imgMuñoz.style.display = "block";
       btnNo.addEventListener("click", redireccion);
       h3opcion.style.opacity = "100%";
       btnNo.innerText = "ZI";
@@ -43,7 +38,7 @@ function no(){
     break;
     }
     
-    numeroIntentos++;
+  numeroIntentos++;
 }
 
 btnSi.addEventListener("click", redireccion)
