@@ -22,7 +22,7 @@ body{
 }
 
 #dvImg{
-  overflow: hidden;
+  //overflow: hidden;
   width: 280px;
   height: 400px;
   border-radius: 15px;
