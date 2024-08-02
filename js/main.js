@@ -5,8 +5,7 @@ let imgMuñoz = document.getElementById("imgMuñoz");
 let numeroIntentos = 0;
 
 btnNo.onclick = function(){
-  setTimeout(function(){
-    switch (numeroIntentos){
+  switch (numeroIntentos){
     case 0:
       imgMuñoz.src = "./imgs/Muñoz3.jpg";
       btnNo.innerText = "Estoy segura";
@@ -32,7 +31,6 @@ btnNo.onclick = function(){
     }
     
     numeroIntentos++;
-  }, 100);
 }
 
 btnSi.addEventListener("click", redireccion)
