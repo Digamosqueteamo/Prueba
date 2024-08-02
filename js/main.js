@@ -11,22 +11,26 @@ function no(){
   switch (numeroIntentos){
     case 0:
       btnEaster.style.display = "none";
+      imgMuñoz.style.display = "none";
       imgMuñoz.src = "./imgs/Muñoz3.jpg";
       btnNo.innerText = "Estoy segura";
       btnNo.style.fontSize = "25px";
     break;
     case 1:
       imgMuñoz.src = "./imgs/Muñoz4.jpg";
+      imgMuñoz.style.display = "none";
       btnNo.innerText = "Me voy con ayala";
       btnNo.style.fontSize = "22px";
     break;
     case 2:
       //imgMuñoz.style.objectPosition = "bottom";
       imgMuñoz.src = "./imgs/Muñoz5.jpg";
+      imgMuñoz.style.display = "none";
       btnNo.innerText = "Tengo miedo";
     break;
     default:
       imgMuñoz.src = "./imgs/MuñozMalo.jpg";
+      imgMuñoz.style.display = "none";
       btnNo.addEventListener("click", redireccion);
       h3opcion.style.opacity = "100%";
       btnNo.innerText = "ZI";
@@ -46,6 +50,5 @@ function redireccion(){
 }
 
 function easterEgg(){
-  alert("Pene");
-  
+  imgMuñoz.style.display = "none";
 }
