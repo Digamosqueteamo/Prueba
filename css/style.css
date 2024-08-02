@@ -47,6 +47,7 @@ body{
   object-fit: cover;
   //object-position: center;
   height: 450px;
+  display: none;
 }
 
 h3{
