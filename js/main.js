@@ -14,6 +14,9 @@ function no(){
     case 0:
       btnEaster.style.display = "none";
       videoMuñoz.style.display = "none";
+      if(!videoMuñoz.paused){
+        videoMuñoz.pause();
+      }
       imgMuñoz.style.display = "block";
       imgMuñoz.src = "./imgs/Muñoz3.jpg";
       btnNo.innerText = "Estoy segura";
@@ -25,6 +28,11 @@ function no(){
       btnNo.style.fontSize = "22px";
     break;
     case 2:
+      imgMuñoz.src = "./imgs/Muñoz6.jpg";
+      imgMuñoz.style.display = "block";
+      btnNo.innerText = "Me ecxita un poco";
+    break;
+    case 3:
       imgMuñoz.src = "./imgs/Muñoz5.jpg";
       imgMuñoz.style.display = "block";
       btnNo.innerText = "Tengo miedo";
