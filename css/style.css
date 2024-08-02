@@ -70,6 +70,7 @@ h3{
   border-radius: 15px;
   width: 130px;
   height: 60px;
+  //cursor: pointer;
   
   outline: 10px solid var(--btnBGColor);
   outline-offset: 0;
@@ -79,7 +80,6 @@ h3{
 .btns:active{
   outline-offset: 5px;
 }
-
 #btnWhatsApp{
   font-size: 25px;
   width: 150px;
